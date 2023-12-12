@@ -50,6 +50,21 @@ app.get('/', (req, res) => {
           })
           })
 
+          const getLinks = async () => {
+            try {
+            // make a request to our server to get the links
+            const response = await fetch('/api/links')
+            // convert the response to json
+            const data = await response.json()
+            /*
+            here you can do something with the data
+            */
+            } catch (error) {
+              console.error(error)
+            }
+            }
+            
+
 
     
 
